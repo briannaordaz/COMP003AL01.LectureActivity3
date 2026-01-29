@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Diagnostics;
+
 namespace COMP003AL03.LectureActivity3
 {
 
@@ -75,8 +77,19 @@ namespace COMP003AL03.LectureActivity3
             Console.WriteLine("Enter a semester code (SP, SU, FA)");
             string semesterCode = Console.ReadLine();
 
+            switch(semesterCode)
+            {
+                case "SP": Console.WriteLine("Spring");
+                    break;
+                case "SU": Console.WriteLine("Summer");
+                    break;
+                case "FA": Console.WriteLine("Fall");
+                    break;
+                default: break;
+            }
 
-
+            
+            
         }
 
     }
